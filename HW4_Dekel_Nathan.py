@@ -368,7 +368,7 @@ print('Saved initialized model at %s ' % model_path)
 history_a = new_a_model.fit(X_train, Y_train,
                             batch_size=batch_size, epochs=epochs,
                             verbose=0,
-                            validation_data=(X_val, Y_val))
+                            validation_data=(X_test, Y_test))
 
 # Plotting the loss & accuracy (with regards to the testing set)
 fig, axs = plt.subplots(1, 2, figsize=(12, 5))

@@ -29,9 +29,6 @@ from skimage.io import imread
 
 from skimage.transform import rescale, resize, downscale_local_mean
 
-# Not sure why, but the following line won't run in the code.
-#get_ipython().run_line_magic('matplotlib', 'inline')
-
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 

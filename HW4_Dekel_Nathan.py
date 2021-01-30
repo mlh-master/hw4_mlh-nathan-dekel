@@ -689,7 +689,6 @@ NNet.compile(optimizer=AdamOpt, metrics=['acc'], loss='categorical_crossentropy'
 
 # Preforming the training by using fit
 # IMPORTANT NOTE: This will take a few minutes!
-########### Used CNN_X_train and CNN_X_val because original ones were flattened already ##########
 h = NNet.fit(x=X_train, y=Y_train, batch_size=batch_size, epochs=epochs, verbose=1, validation_split=0,
              validation_data=(X_val, Y_val), shuffle=True)
 
@@ -735,7 +734,6 @@ Checkp = ModelCheckpoint(Checkpath, monitor='val_acc', verbose=1, save_best_only
 
 # Preforming the training by using fit
 # IMPORTANT NOTE: This will take a few minutes!
-########### Used CNN_X_train and CNN_X_val because original ones were flattened already ##########
 h = NNet.fit(x=X_train, y=Y_train, batch_size=batch_size, epochs=epochs, verbose=1, validation_split=0,
              validation_data=(X_val, Y_val), shuffle=True)
 # NNet.save(model_fn)

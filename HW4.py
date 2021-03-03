@@ -565,5 +565,5 @@ print('test loss, test acc:', results)
 
 #--------------------------Impelment your code here:-------------------------------------
 
-#The function is already modified above
+#The function is already modified above. 
 #----------------------------------------------------------------------------------------
